@@ -152,6 +152,42 @@ p {
 .sidebar-module-inset ol {
   border-bottom: 1px solid #eeeeee;
 }
+.sidebar-module-inset .subscribe {
+
+}
+.sidebar-module-inset li.subscribe {
+  text-align: center;
+  color: #888;
+  line-height: 1;
+  padding: 30px 0;
+}
+.sidebar-module-inset li .subscribe-options {
+  margin-top: 14px;
+}
+.sidebar-module-inset li .subscribe-options a {
+  margin: 0 6px;
+}
+
+/* Icons */
+.icon-big {
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: url(../icons/icon-sprite.png) no-repeat;
+  background-image: url(../icons/icon-sprite.svg);
+  /*background: url(media/images/icons/icon-sprite.png) no-repeat;
+  background-image: url(media/images/icons/icon-sprite.svg);*/
+}
+.icon-big.twitter {
+  background-position: 0 -200px;
+}
+.icon-big.facebook {
+  background-position: 0 -240px;
+}
+.icon-big.feed {
+  background-position: 0 -280px;
+}
 
 
 /* Pagination */
