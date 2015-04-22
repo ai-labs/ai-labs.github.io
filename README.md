@@ -6,8 +6,8 @@ ai-labs.org blogging with Jekyll
 Dependencies & Installing
 -------------------------
 
-sudo aptitude install ruby ruby-dev rubygems1.9.1 nodejs nodejs-dev
-gem install jekyll
+    sudo aptitude install ruby ruby-dev rubygems1.9.1 nodejs nodejs-dev
+    gem install jekyll
 
 Usage
 -----
