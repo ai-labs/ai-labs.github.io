@@ -101,15 +101,15 @@ And its LSTM version used fo:
 
 |       Model can be read in tensor flow:       |
 |-------------------------------------------------|
-|https://www.tensorflow.org/tutorials/recurrent |
-|https://www.tensorflow.org/tutorials/seq2seq|
+|[https://www.tensorflow.org/tutorials/recurrent] |
+|[https://www.tensorflow.org/tutorials/seq2seq]|
 
 
 |Additional links:|
 |----------------------------------------------------------|
-|http://colah.github.io/posts/2015-08-Understanding-LSTMs/|
-|https://habrahabr.ru/company/wunderfund/blog/330194/|
-|https://habrahabr.ru/company/wunderfund/blog/331310/|
-|http://www.bioinf.jku.at/publications/older/2604.pdf|
-|https://arxiv.org/pdf/1409.3215.pdf|
-|https://www.gutenberg.org/|
+|[http://colah.github.io/posts/2015-08-Understanding-LSTMs/]|
+|[https://habrahabr.ru/company/wunderfund/blog/330194/]|
+|[https://habrahabr.ru/company/wunderfund/blog/331310/]|
+|[http://www.bioinf.jku.at/publications/older/2604.pdf]|
+|[https://arxiv.org/pdf/1409.3215.pdf]|
+|[https://www.gutenberg.org/]|
