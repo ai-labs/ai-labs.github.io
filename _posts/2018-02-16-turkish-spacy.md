@@ -1,8 +1,10 @@
 ---
 layout: post
-title:  ai-labs relaunch
+title:  add Turkish support to spacy
 ---
 
-## Going open
-ai-labs.org has been working on a non-public project for 2 years now. We are glad to announce that ai-labs
-is finalizing the current mode of working and becomes more open company.
+## Why we think we can do this now
+
+## Roadmap
+
+## Modal Training
