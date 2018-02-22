@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Visualize parsing result with Spacy snippet
+title:  Visualize parsing result
 ---
 This is just a primitive "setup and use" snippet.
 
@@ -35,7 +35,8 @@ parse using the [displaCy visualizer](https://demos.explosion.ai/displacy/).
     displacy.render(doc1, style='dep', jupyter=True)
 ```
 
-![alt text](../media/images/parsing_results.svg "Tree")
+<!-- ![alt text](../media/images/parsing_results.svg) -->
+<img src="http://blog.ai-labs.org/media/images/parsing_results.svg" width="500">
 
 See: [SpaCy Visualizers](https://spacy.io/usage/visualizers)
 
