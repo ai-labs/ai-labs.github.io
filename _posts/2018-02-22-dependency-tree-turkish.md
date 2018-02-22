@@ -12,7 +12,7 @@ from spacy import displacy
 nlp = spacy.load('tr_unnamed')
 ```
 
-*. Process whole sentence and visualize the results.
+2. Process whole sentence and visualize the results.
 ```python
 doc1 = nlp('Ben seni çok seviyorum.')
 for token in doc1:
