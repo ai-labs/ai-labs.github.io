@@ -2,4 +2,4 @@ name: ai-labs blog
 description: ai-labs.org blog
 url: http://ai-labs.github.io
 excerpt_separator: <!--more-->
-theme: jekyll-theme-hacker
+theme: jekyll-theme-midnight
