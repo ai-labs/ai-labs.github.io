@@ -1,3 +1,8 @@
+---
+layout: post
+title:  spaCy model quality assessment.
+---
+
 ### spaCy model quality assessment.
 
 To assess the performance of the spaCy model, a library *comparator.py* was created. For conll format parsing we use some libraries of [CoNLL-U Parser](https://github.com/EmilStenstrom/conllu) without its installation. [CoNLL-U Parser](https://github.com/EmilStenstrom/conllu) parses a conll formatted string into a ordered python dictionary.
