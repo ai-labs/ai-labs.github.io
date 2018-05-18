@@ -3,8 +3,6 @@ layout: post
 title:  spaCy model quality assessment.
 ---
 
-### spaCy model quality assessment.
-
 To assess the performance of the spaCy model, a library *comparator.py* was created. For conll format parsing we use some libraries of [CoNLL-U Parser](https://github.com/EmilStenstrom/conllu) without its installation. [CoNLL-U Parser](https://github.com/EmilStenstrom/conllu) parses a conll formatted string into a ordered python dictionary.
 
 With library *comparator.py* we can do following:
@@ -46,7 +44,8 @@ Tam umudunu kesip geri döneceği sırada şehrin en ucundan çıkan dumanı gö
 {'arcs': [{'end': 4, 'start': 0, 'dir': 'left', 'label': 'det'}, {'end': 1, 'start': 0, 'dir': 'right', 'label': 'compound'}, {'end': 4, 'start': 2, 'dir': 'left', 'label': 'obl'}, {'end': 4, 'start': 3, 'dir': 'left', 'label': 'advmod'}, {'end': 5, 'start': 4, 'dir': 'right', 'label': 'punct'}], 'words': [{'text': 'Bu', 'tag': 'DET'}, {'text': 'yüzden', 'tag': 'NOUN'}, {'text': 'trendlerle', 'tag': 'NOUN'}, {'text': 'çok', 'tag': 'ADV'}, {'text': 'ilgililer', 'tag': 'ADJ'}, {'text': '.', 'tag': 'PUNCT'}]}
 ```
 Appropriate visualization result:
-![alt text](../media/images/visualization.png "Result")
+
+<img src="http://blog.ai-labs.org/media/images/visualization.png" width="600">
 
 The first quality checking was performed on [tr-ud-train.conllu](https://github.com/UniversalDependencies/UD_Turkish/blob/master/tr-ud-train.conllu) data file. We compare the original tree with tree obtained on the model by three criterion: DEPREL, POS, LEMMA (items 4, 5, 6 in upper list). We 
 have got following results (number of examples 3685):
