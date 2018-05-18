@@ -45,7 +45,7 @@ Tam umudunu kesip geri döneceği sırada şehrin en ucundan çıkan dumanı gö
 ```
 Appropriate visualization result:
 
-<img src="http://blog.ai-labs.org/media/images/visualization.png" width="600">
+<img src="http://blog.ai-labs.org/media/images/visualization.png" width="100%">
 
 The first quality checking was performed on [tr-ud-train.conllu](https://github.com/UniversalDependencies/UD_Turkish/blob/master/tr-ud-train.conllu) data file. We compare the original tree with tree obtained on the model by three criterion: DEPREL, POS, LEMMA (items 4, 5, 6 in upper list). We 
 have got following results (number of examples 3685):

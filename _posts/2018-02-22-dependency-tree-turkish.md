@@ -27,5 +27,5 @@ seviyorum sev VERB Verb
 . . PUNCT Punc
 ```
 
-![alt text](../media/images/bensenicokseviyorum.jpg "Tree")
+<img src="http://blog.ai-labs.org/media/images/bensenicokseviyorum.jpg" width="100%">
 
