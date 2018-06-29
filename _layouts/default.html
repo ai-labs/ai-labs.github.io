@@ -23,7 +23,13 @@
     <script src="/media/js/ie-emulation-modes-warning.js"></script>
 
     <!-- Custom style -->
-    <style type="text/css"></style>
+    <style type="text/css">
+      .posts {padding-left: 0px;}
+      .posts ul {padding-left: 10px;}
+      .posts li {overflow: hidden; white-space: nowrap;}
+      .posts span {cursor: pointer;}
+      .hidden{ display:none; }
+    </style>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -85,27 +91,11 @@
             <!-- <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p> -->
           </div>
           <div class="sidebar-module">
-            <!-- <h4>Archives</h4>
-            <ol class="list-unstyled">
-              <li><a href="#">April 2015</a></li>
-              <li><a href="#">February 2014</a></li>
-              <li><a href="#">January 2014</a></li>
-              <li><a href="#">December 2013</a></li>
-              <li><a href="#">November 2013</a></li>
-              <li><a href="#">October 2013</a></li>
-              <li><a href="#">September 2013</a></li>
-              <li><a href="#">August 2013</a></li>
-              <li><a href="#">July 2013</a></li>
-              <li><a href="#">June 2013</a></li>
-              <li><a href="#">May 2013</a></li>
-              <li><a href="#">April 2013</a></li>
-            </ol> -->
-            <h1>Archive of posts with {{ site.type }} '{{ site.title }}'</h1>
+            <h1>Archive</h1>
             <ul class="posts">
               {% for post in site.posts %}
-                <li>
-                  <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                <li class='{{ post.date | date: "year%Y" }} {{ post.date | date: "month%b" }}'>
+                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">{{ post.title }}</a>
                 </li>
               {% endfor %}
             </ul>
@@ -145,6 +135,40 @@
     <script src="/media/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="/media/js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+    $(document).ready(function(){
+      console.log('ready!');
+      var $posts = $('.posts li');
+      $posts.each(function(i, d) {
+        var yearMonth = d.getAttribute('class').split(' ');
+        var year = yearMonth[0];
+        var month = yearMonth[1];
+
+        // build structure for post
+        if ($('#'+year).length == 0) {
+          // create and append year
+          var $yearElement = '<li id="' + year + '"><span>'+year.split('year')[1]+'</span><ul class="hidden"></ul></li>';
+          $('.posts').append($yearElement);
+          var $monthElement = '<li id="' + year + month + '"><span>'+month.split('month')[1]+'</span><ul class="hidden"></ul></li>';
+          $('#'+year+' ul').append($monthElement);
+        } else {
+          if ($('#'+year+month).length == 0) {
+            // create and append month
+            var $monthElement = '<li id="' + year + month + '"><span>'+month.split('month')[1]+'</span><ul class="hidden"></ul></li>';
+            $('#'+year+' > ul').append($monthElement);
+          }
+        }
+        // append post
+        $('#'+year+month+' ul').append(this);
+      });
+
+      // toggle
+      $('.posts span').click(function(e) {
+        $(this).next('ul').toggle();
+        $(this).next('ul').toggleClass('hidden', false);
+      });
+    });
+    </script>
 
 
   </body>
