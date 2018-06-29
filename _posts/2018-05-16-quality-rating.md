@@ -1,9 +1,12 @@
 ---
 layout: post
 title:  spaCy model for Turkish quality evaluation.
+excerpt_separator: <!--more-->
 ---
 
-To assess the performance of the spaCy model, a library *comparator.py* was created. For conll format parsing we use some libraries of [CoNLL-U Parser](https://github.com/EmilStenstrom/conllu) without its installation. [CoNLL-U Parser](https://github.com/EmilStenstrom/conllu) parses a conll formatted string into a ordered python dictionary.
+To estimate the performance of the model, a library *comparator.py* was created. For conll format parsing we use some libraries of [CoNLL-U Parser](https://github.com/EmilStenstrom/conllu) without its installation. [CoNLL-U Parser](https://github.com/EmilStenstrom/conllu) parses a conll formatted string into a ordered python dictionary.
+
+<!--more-->
 
 With library *comparator.py* we can do following:
 1. Getting conll from spaCy doc for one sentence.

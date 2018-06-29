@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  Result of Turkish Model Training.
+excerpt_separator: <!--more-->
 ---
 
 1. Run the [Jupyter Notebook](http://jupyter.org/) and create new notebook in browser window. Import *spacy*, *displacy* and load *tr_unnamed model*.
@@ -9,6 +10,7 @@ import spacy
 from spacy import displacy
 nlp = spacy.load('tr_unnamed')
 ```
+<!--more-->
 
 2. Process whole sentence and visualize the results.
 ```python

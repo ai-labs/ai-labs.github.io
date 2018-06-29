@@ -1,9 +1,12 @@
 ---
 layout: post
 title:  Adding a SpaCy support for Turkish. Part 2
+excerpt_separator: <!--more-->
 ---
 Before making a decision if we can add a support for Turkish language we need to check availability of basic training data.
 We went through the publicly available Turkish corpora and analysed this.
+
+<!--more-->
 
 ### Available Turkish data for training spaCy models.
 

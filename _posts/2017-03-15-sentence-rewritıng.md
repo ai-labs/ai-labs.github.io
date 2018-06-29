@@ -1,11 +1,12 @@
 ---
 layout: post
 title:  English Sentence Rewriting Model Design And Training.
+excerpt_separator: <!--more-->
 ---
 
 Technical implementation of a sentence re-writer based on seq2seq encoder can be taken from TensorFlow.  - software designed by google which simplifies neural networks building and training.
 
-
+<!--more-->
 ###### Solving process implies following stages and steps:
 1. Data obtaining and preprocessing
 2. Neural network training
@@ -16,6 +17,9 @@ We chose gutenberg corpus which contains 54000 free e-books from different autho
 2. Run over the “unique” filter
 3. Random shuffling and saving to a separate file
 4. Running through the POS tagging procedure (internally we use Spacy for this)
+
+
+
 
    |TAG|
    |-----|
