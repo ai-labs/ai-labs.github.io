@@ -54,19 +54,27 @@ Two vectorization strategies for output sequences are verified:
 2. The output sequence vectorization only with markers 'code' (2) and 'text' (3). Thus, the output sequences were as follows: 33333333333333332222222222222222222333333333333333333333000001.
 As a result of the experiments it was established that the first strategн of vectorization gives a poor convergence of the loss function (Fig.1).
 
-<img src="http://blog.ai-labs.org/media/images/image01.png" width="100%">
-<img src="http://blog.ai-labs.org/media/images/image02.png" width="100%">
+<table>
+<tr>
+<td><img src="http://blog.ai-labs.org/media/images/image01.png" width="100%"></td>
+<td><img src="http://blog.ai-labs.org/media/images/image02.png" width="100%"></td>
+</tr>
+</table>
 
 Fig.1. Loss functionon train (left image) and test (right image) data.
 
 ### Train
 For model training we use advanced dynamic seq2seq with TensorFlow on the base of this [Collection of unfinished tutorials](https://github.com/ematvey/tensorflow-seq2seq-tutorials). Encoder is bidirectional. Decoder is implemented using tf.nn.raw_rnn. The input and output sequences during the training were the same length. The volume of training sample is 1180100 items, batch size - 100 sequences. Convergence of experimental results demonstrate the loss function (Fig.2).
 
+<table>
+<tr>
+<td><img src="http://blog.ai-labs.org/media/images/image03.png" width="100%"></td>
+<td><img src="http://blog.ai-labs.org/media/images/image04.png" width="100%"></td>
+</tr>
+</table>
 
-<img src="http://blog.ai-labs.org/media/images/image03.png" width="100%">
-<img src="http://blog.ai-labs.org/media/images/image04.png" width="100%">
 
-Fig.2. Loss functionon train (first image) and test (second image) data.
+Fig.2. Loss function train (first image) and test (second image) data.
 
 ## Implementation 
 See [this](https://github.com/korobool/codefinder) github repo.
