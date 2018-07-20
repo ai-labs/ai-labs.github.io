@@ -11,6 +11,7 @@ imply a pre-processing of some raw textual data (like something  received from t
 The problem described here is about separating the regular plain text regions 
 from the regions containing script code. 
 
+<!--more-->
 
 Partially this problem is solved with the help of regular expressions 
 (especially if design a special [BNF](https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form) analyser) 
@@ -50,9 +51,28 @@ The code was injected at the training data preparation stage using following str
 ### Vectorization
 The input sequence was vectorized symbol-by-symbol on the entire set of [printable characters](https://docs.python.org/3/library/string.html). The 'pad' number is 0 (PAD = 0) and 'end of sequence is 1' (EOS = 1).
 Two vectorization strategies for output sequences are verified:
+
 1. The injection of a code marker (number 2 and 3) for the beginning and end of the code and further vectorization on the set of [printable characters](https://docs.python.org/3/library/string.html).
 2. The output sequence vectorization only with markers 'code' (2) and 'text' (3). Thus, the output sequences were as follows: 33333333333333332222222222222222222333333333333333333333000001.
-As a result of the experiments it was established that the first strategн of vectorization gives a poor convergence of the loss function (Fig.1).
+
+<table>
+<tr>
+<td>Strategy 1</td>
+<td>Strategy 2</td>
+</tr>
+<tr>
+<td>The injection of a code marker (number 2 and 3) 
+for the beginning and end of the code and further vectorization 
+on the set of <a href="https://docs.python.org/3/library/string.html">printable characters</a>].
+</td>
+<td>The output sequence vectorization only with markers 'code' 
+(2) and 'text' (3). Thus, the output sequences were as f
+ollows: 333...............01.
+</td>
+</tr>
+</table>
+
+As a result of the experiments it was established that the first strategy of vectorization gives a poor convergence of the loss function (Fig.1).
 
 <table>
 <tr>
@@ -61,10 +81,11 @@ As a result of the experiments it was established that the first strategн of ve
 </tr>
 </table>
 
-Fig.1. Loss functionon train (left image) and test (right image) data.
+Fig.1. Loss function train (left image) and test (right image) data. It converges, 
+but the final quality is not good enough.
 
 ### Train
-For model training we use advanced dynamic seq2seq with TensorFlow on the base of this [Collection of unfinished tutorials](https://github.com/ematvey/tensorflow-seq2seq-tutorials). Encoder is bidirectional. Decoder is implemented using tf.nn.raw_rnn. The input and output sequences during the training were the same length. The volume of training sample is 1180100 items, batch size - 100 sequences. Convergence of experimental results demonstrate the loss function (Fig.2).
+For model training we use advanced dynamic seq2seq with TensorFlow on the base of this [Collection of tutorials](https://github.com/ematvey/tensorflow-seq2seq-tutorials). Encoder is bidirectional. Decoder is implemented using tf.nn.raw_rnn. The input and output sequences during the training were the same length. The volume of training sample is 1180100 items, batch size - 100 sequences. Convergence of experimental results demonstrate the loss function (Fig.2).
 
 <table>
 <tr>
@@ -74,7 +95,7 @@ For model training we use advanced dynamic seq2seq with TensorFlow on the base o
 </table>
 
 
-Fig.2. Loss function train (first image) and test (second image) data.
+Fig.2. Loss function train (first image) and test (second image) data. Final quality the model was much better.
 
 ## Implementation 
 See [this](https://github.com/korobool/codefinder) github repo.
