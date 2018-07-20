@@ -42,11 +42,11 @@ A typical JavaScript code parts was used for experiments.
 Train examples are represented by 1050 length documents initially based on regular texts from books with parts of 
 source code added.
 
-The code was injected at the training data preparation stage using following strategies:
+The code was injected into the training data using following strategies:
 1. Sequences only from text data.
-2. Code is inserted into the beginning of the text sequences.
-3. Code is inserted into the end of the text sequences.
-4. Code is embedded inside the text sequence.
+2. Code is inserted at the beginning of the text sequences.
+3. Code is inserted at the end of the text sequences.
+4. Code is embedded in the middle sequence.
 
 ### Vectorization
 The input sequence was vectorized symbol-by-symbol on the entire set of [printable characters](https://docs.python.org/3/library/string.html). The 'pad' number is 0 (PAD = 0) and 'end of sequence is 1' (EOS = 1).
@@ -125,11 +125,11 @@ onLoad(function() { // Everything in one anonymous function: no symbols defined
         var img = document.images[i]; 
         var rollover = img.getAttribute("data-rollover"); 
 
-le
+
 <-end_code->
 
 <-start_text->
-ngth about the long history of the Terranic aggression and genocide.
+length about the long history of the Terranic aggression and genocide.
 Ohhh, he groaned at the memory of such an admission reaching Hrruban ears;
 ears unfamiliar with the Terran language. What on earth had possessed him
 to talk about that phase of Terran history in the first place? What an
