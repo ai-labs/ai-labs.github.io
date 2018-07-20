@@ -60,7 +60,7 @@ Two vectorization strategies for output sequences are verified:
 <tr>
 <td>The injection of a code marker (number 2 and 3) 
 for the beginning and end of the code and further vectorization 
-on the set of <a href="https://docs.python.org/3/library/string.html">printable characters</a>].
+on the set of <a href="https://docs.python.org/3/library/string.html">printable characters</a>.
 </td>
 <td>The output sequence vectorization only with markers 'code' 
 (2) and 'text' (3). Thus, the output sequences were as f
