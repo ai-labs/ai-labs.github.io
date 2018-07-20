@@ -52,9 +52,6 @@ The code was injected at the training data preparation stage using following str
 The input sequence was vectorized symbol-by-symbol on the entire set of [printable characters](https://docs.python.org/3/library/string.html). The 'pad' number is 0 (PAD = 0) and 'end of sequence is 1' (EOS = 1).
 Two vectorization strategies for output sequences are verified:
 
-1. The injection of a code marker (number 2 and 3) for the beginning and end of the code and further vectorization on the set of [printable characters](https://docs.python.org/3/library/string.html).
-2. The output sequence vectorization only with markers 'code' (2) and 'text' (3). Thus, the output sequences were as follows: 33333333333333332222222222222222222333333333333333333333000001.
-
 <table>
 <tr>
 <td>Strategy 1</td>
