@@ -67,12 +67,8 @@ For model training we use advanced dynamic seq2seq with TensorFlow on the base o
 
 Fig.2. Loss functionon train (first image) and test (second image) data.
 
-## Repository content
-1. *train.py* is a script for model training.
-2. *model.py* is a library that describes the network architecture.
-3. *helpers.py* is a library that performs padding with zeros and converts data to numpy arrays.
-4. *code_detector.py* is a library containing the code-detector class, works on the pre-trained model.
-5. *Code_Detector.ipynb* is a notebook demonstrating the *code_detector.py* example.
+## Implementation 
+See [this](https://github.com/korobool/codefinder) github repo.
 
 ## Example of code detecting
 ```
