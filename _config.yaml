@@ -3,12 +3,13 @@ description: ai-labs.org blog
 url: http://ai-labs.github.io
 excerpt_separator: <!--more-->
 # theme: jekyll-theme-midnight
-plugins:
-  - jekyll-archives
-jekyll-archives:
-  enabled: 'all'
-  layout: 'default'
-  permalinks:
-    year: '/:year/'
-    month: '/:year/:month/'
-    day: '/:year/:month/:day/'
+# theme: jekyll-theme-primer
+# plugins:
+#   - jekyll-archives
+# jekyll-archives:
+#   enabled: 'all'
+#   layout: 'default'
+#   permalinks:
+#     year: '/:year/'
+#     month: '/:year/:month/'
+#     day: '/:year/:month/:day/'

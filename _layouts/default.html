@@ -1,95 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ site.lang | default: "en-US" }}">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="/media/icons/favicon.ico">
 
-    <title>ai-labs.org blog</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="/media/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
+    <link href="/media/css/primer-build.css" rel="stylesheet">
+    <link href="/media/css/primer-custom.css" rel="stylesheet">
     <link href="/media/css/blog.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="/media/js/ie-emulation-modes-warning.js"></script>
-
-    <!-- Custom style -->
-    <style type="text/css">
-      .posts {padding-left: 0px;}
-      .posts ul {padding-left: 10px;}
-      .posts li {overflow: hidden; white-space: nowrap;}
-      .posts span {cursor: pointer;}
-      .hidden{ display:none; }
-    </style>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link href="/media/css/custom.css" rel="stylesheet">
   </head>
-
   <body>
-
-    <!-- <div class="blog-masthead">
-      <div class="container">
-        <nav class="blog-nav">
-          <a class="blog-nav-item active" href="#">Home</a>
-          <a class="blog-nav-item" href="#">New features</a>
-          <a class="blog-nav-item" href="#">Press</a>
-          <a class="blog-nav-item" href="#">New hires</a>
-          <a class="blog-nav-item" href="#">About</a>
-        </nav>
-      </div>
-    </div> -->
-
     <div class="container">
-
       <div class="blog-header">
         <a href="/"><h1 class="blog-title">ai-labs.org blog</h1></a>
-        <!-- <p class="lead blog-description">The official ai-labs.org blog</p> -->
       </div>
-
-      <div class="row">
-
-        <div class="col-sm-8 blog-main">
+    </div>
+    <div class="container-lg px-3 my-5 markdown-body">
+      <div class="columns mb-1">
+        <div class="four-fifths column block-blue p-3">
           {{ content }}
-        </div><!-- /.blog-main -->
-
-        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-          <div class="sidebar-module sidebar-module-inset">
-            <ol class="list-unstyled">
-              <li><a href="http://ai-labs.org">About</a></li>
-              <!-- <li><a href="#">About</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">About</a></li> -->
-              <li class="subscribe">
-                Follow us here
-                <div class="subscribe-options">
-                  <!-- <a class="icon-big twitter" href="http://twitter.com/googleventures"></a> -->
-                  <!-- <a class="icon-big facebook" href="http://www.facebook.com/GoogleVentures"></a> -->
-                  <!-- <a class="icon-big feed" href="/feed.links.xml"></a> -->
-                  <a class="icon-big feed" href="/feed.xml"></a>
-                </div>
-              </li>
-            </ol>
-            <!-- <h4><a href="http://ai-labs.org/">About</a></h4> -->
-            <!-- <p><a href="http://ai-labs.org/">ai-labs.org</a></p> -->
-            <!-- <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p> -->
-          </div>
+        </div>
+        <div class="one-fifth column block-blue p-3">
           <div class="sidebar-module">
             <h1>Archive</h1>
             <ul class="posts">
@@ -100,33 +32,15 @@
               {% endfor %}
             </ul>
           </div>
-          <!-- <div class="sidebar-module">
-            <h4>Elsewhere</h4>
-            <ol class="list-unstyled">
-              <li><a href="#">GitHub</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">Facebook</a></li>
-            </ol>
-          </div> -->
-        </div><!-- /.blog-sidebar -->
-
-      </div><!-- /.row -->
-
-      <!-- <hr> -->
-
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
       <footer>
         <p>© 2015 ai-labs.org</p>
       </footer>
-
-    </div><!-- /.container -->
-
-    <!-- <footer class="blog-footer">
-      <p>© 2015 ai-labs.org</p>
-      <p>
-        <a href="#">Back to top</a>
-      </p>
-    </footer> -->
-
+    </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -169,7 +83,6 @@
       });
     });
     </script>
-
 
   </body>
 </html>
