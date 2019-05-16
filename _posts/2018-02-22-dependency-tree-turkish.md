@@ -1,9 +1,7 @@
-
 ---
 layout: post
-title:  Result of Turkish Model Training - see the dependency tree.
+title:  Result of Turkish Model Training.
 ---
-
 
 1. Run the [Jupyter Notebook](http://jupyter.org/) and create new notebook in browser window. Import *spacy*, *displacy* and load *tr_unnamed model*.
 ```python

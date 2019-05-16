@@ -35,7 +35,6 @@ parse using the [displaCy visualizer](https://demos.explosion.ai/displacy/).
     displacy.render(doc1, style='dep', jupyter=True)
 ```
 
-<!-- ![alt text](../media/images/parsing_results.svg) -->
 <img src="http://blog.ai-labs.org/media/images/parsing_results.svg" width="600">
 
 See: [SpaCy Visualizers](https://spacy.io/usage/visualizers)
