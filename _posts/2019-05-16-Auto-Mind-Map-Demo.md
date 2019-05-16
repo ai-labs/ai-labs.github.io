@@ -4,7 +4,7 @@ title:  Automatic Realtime Mind Map Builder From Mic.
 excerpt_separator: <!--more-->
 ---
 
-###MM-demo
+### MM-demo
 MM-demo is a project aimed at building a mind map of conversation in real time. The operation of MM-demo can be divided into several stages:
 
 
