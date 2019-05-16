@@ -7,6 +7,8 @@ excerpt_separator: <!--more-->
 ### MM-demo
 MM-demo is a project aimed at building a mind map of conversation in real time. The operation of MM-demo can be divided into several stages:
 
+<!--more-->
+
 
 1. Recognition of words, phrases and sentences for a certain period of time.
 2. Finding named entities (NE) and noun phrases (NP).
@@ -15,6 +17,7 @@ MM-demo is a project aimed at building a mind map of conversation in real time. 
 5. Calculation of the relationship coefficients (relationship matrix – Fig. 1) between all significant entities on the basis of our own d2v model.
 6. Selection of the root node, several second level nodes (for example, five), as well as third level nodes.
 7. Plotting just created graph as a mind map.
+
 
 
 Schematically, the operation of MM-demo is shown in Fig. 2.
