@@ -19,5 +19,11 @@ Usage
 Drafts
 ------
 
+To get local drafts work, 
+follow [instructions](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/) 
+to configure local environment.
+
 For drafts you should create `_drafts` directory and put your markdown page
 into this directory. Then run jekyll with `$ jekyll serve --drafts` command.
+
+

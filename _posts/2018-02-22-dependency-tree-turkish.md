@@ -9,6 +9,7 @@ import spacy
 from spacy import displacy
 nlp = spacy.load('tr_unnamed')
 ```
+<!--more-->
 
 2. Process whole sentence and visualize the results.
 ```python
@@ -27,5 +28,5 @@ seviyorum sev VERB Verb
 . . PUNCT Punc
 ```
 
-![alt text](../media/images/bensenicokseviyorum.jpg "Tree")
+<img src="http://blog.ai-labs.org/media/images/bensenicokseviyorum.jpg" width="100%">
 

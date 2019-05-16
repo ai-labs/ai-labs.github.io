@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  Visualize parsing result
+excerpt_separator: <!--more-->
 ---
 This is just a primitive "setup and use" snippet.
 
@@ -9,6 +10,8 @@ It is very easy to use the [Jupyter Notebook](http://jupyter.org/) with nbextens
 The [displaCy Jupyter extension](https://github.com/explosion/spacy-dev-resources/tree/master/jupyter-displacy) is a 
 simple extension for [Jupyter Notebook](http://jupyter.org/) that lets you visualize a JSON-formatted dependency 
 parse using the [displaCy visualizer](https://demos.explosion.ai/displacy/).
+
+excerpt_separator: <!--more-->
 
 1. [Install Jupyter Notebook](http://jupyter.org/install).
 
@@ -35,7 +38,7 @@ parse using the [displaCy visualizer](https://demos.explosion.ai/displacy/).
     displacy.render(doc1, style='dep', jupyter=True)
 ```
 
-<img src="http://blog.ai-labs.org/media/images/parsing_results.svg" width="600">
+<img src="http://blog.ai-labs.org/media/images/parsing_results.svg" width="100%">
 
 See: [SpaCy Visualizers](https://spacy.io/usage/visualizers)
 

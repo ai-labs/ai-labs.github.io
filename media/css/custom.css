@@ -1,0 +1,5 @@
+.posts { padding-left: 0px; }
+.posts ul { padding-left: 10px; }
+.posts li { overflow: hidden; white-space: nowrap; }
+.posts span { cursor: pointer; }
+.hidden { display:none; }
